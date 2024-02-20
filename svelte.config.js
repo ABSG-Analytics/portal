@@ -5,12 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapter({
-			env: {
-				host: '0.0.0.0',
-				port: 3000
-			}
-		})
+		adapter: adapter()
 	}
 };
 
